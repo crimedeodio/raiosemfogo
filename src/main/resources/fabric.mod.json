@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "raiosemfogo",
+	"version": "${version}",
+	"name": "raiosemfogo",
+	"description": "Prevents lightning from causing fires",
+	"authors": [
+		"@crimedeodio"
+	],
+	"contact": {
+		"sources": "https://github.com/crimedeodio/raiosemfogo"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/raiosemfogo/icon.png",
+	"environment": "*",
+	"mixins": [
+		"raiosemfogo.mixins.json",
+		{
+			"config": "raiosemfogo.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": ">=1.20",
+		"java": ">=17"
+	}
+}
